@@ -3,11 +3,14 @@ import Hero from "./components/Hero";
 import img2 from "./assets/img2.png"
 import img3 from "./assets/img3.png"
 import img4 from "./assets/img4.png"
+import img5 from "./assets/img5.png"
+import img6 from "./assets/img6.png"
+import img7 from "./assets/img7.png"
 
 
 function App() {
   return (
-    <div className="max-w-screen-xl mx-auto bg-[#eae4e9]  overflow-hidden">
+    <div className="w-[1252px] h-[4246px] relative bg-[#eae4e9]  overflow-hidden">
     <Hero />
     <div className="w-[565px] h-[174px] left-[342px] top-[770px] absolute text-center text-[#192a51] text-[55px] font-normal font-felix">aBOUT us</div>
     <div className="w-[565px] h-[174px] left-[343px] top-[1353px] absolute text-center text-[#192a51] text-[55px] font-normal font-felix">eVENTS</div>
@@ -15,21 +18,21 @@ function App() {
         <div className="text-center text-[#192a51] text-[55px] font-normal font-felix leading-[42px]">Club gallery</div>
         <div className="w-[1117px] h-[403px] bg-white justify-start items-start gap-6 inline-flex">
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-                <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
+                <img className="self-stretch h-[330px]" src={img5} />
                 <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
                     <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">chenda melam</div>
                     <div className="self-stretch"></div>
                 </div>
             </div>
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-                <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
+                <img className="self-stretch h-[330px]" src={img6} />
                 <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
                     <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">pookalam</div>
                     <div className="self-stretch"></div>
                 </div>
             </div>
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-                <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
+                <img className="self-stretch h-[330px]" src={img7} />
                 <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
                     <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">kathakali</div>
                     <div className="self-stretch"></div>
@@ -47,15 +50,15 @@ function App() {
     </div>
     <div className="h-[326px] px-[115px] pt-[100px] pb-[66px] left-0 top-[3378px] absolute bg-[#eae4e9] flex-col justify-center items-center gap-8 inline-flex">
         <div className="text-center text-[#192a51] text-5xl font-normal font-garamond leading-[56px]">Join the Cosmic Journey!</div>
-        <div className="text-center text-[#2d2d2d] text-lg font-normal font-['Syne'] leading-normal">Ready to explore the wonders of the universe? Become a part of our astronomy club today<br/>and discover a whole new world!<br/></div>
+        <div className="text-center text-[#2d2d2d] text-lg font-normal font-syne leading-normal">Ready to explore the wonders of the universe? Become a part of our astronomy club today<br/>and discover a whole new world!<br/></div>
     </div>
     <div className="w-[1252px] h-[417px] left-0 top-[3769px] absolute">
         <div className="w-[1252px] h-[417px] left-0 top-0 absolute bg-gradient-to-b from-[#eae4e9] to-[#d5c6e0]">
-            <div className="w-[626px] left-[35px] top-[57px] absolute"><span class="text-[#2d2d2d] text-[32px] font-normal font-['Castoro Titling'] leading-[42px]">Reach Out to the </span><span class="text-[#192a51] text-[32px] font-normal font-['Castoro Titling'] leading-[42px]">STARS!</span></div>
+            <div className="w-[626px] left-[35px] top-[57px] absolute"><span class="text-[#2d2d2d] text-[32px] font-normal font-castoro leading-[42px]">Reach Out to the </span><span class="text-[#192a51] text-[32px] font-normal font-castoro leading-[42px]">STARS!</span></div>
             <div className="w-[1204px] h-[108px] left-[35px] top-[121px] absolute justify-start items-start gap-[142px] inline-flex">
                 <div className="grow shrink basis-0 flex-col justify-start items-start gap-[42px] inline-flex">
                     <div className="self-stretch h-[108px] flex-col justify-start items-start gap-[42px] flex">
-                        <div className="self-stretch text-[#2d2d2d] text-[17px] font-normal font-['Epilogue'] leading-[27px]">Reach out to us across the galaxy! <br/><br/>Share your thoughts, ask a question, or simply say hello. <br/>Send us a message and let's explore the universe together!</div>
+                        <div className="self-stretch text-[#2d2d2d] text-[17px] font-normal font-epilogue leading-[27px]">Reach out to us across the galaxy! <br/><br/>Share your thoughts, ask a question, or simply say hello. <br/>Send us a message and let's explore the universe together!</div>
                     </div>
                 </div>
             </div>
@@ -94,6 +97,20 @@ function App() {
     <div className="w-[261px] h-11 p-2.5 left-[450px] top-[2430px] absolute bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] rounded-[20px] shadow-[0px_6px_8.699999809265137px_0px_rgba(159,134,192,0.45)] justify-center items-center gap-2.5 inline-flex">
         <div className="text-white text-[22px] font-semibold font-['Syne'] leading-9">Explore</div>
     </div>
+    <div className="w-[1300px] h-[632px] left-[-23px] top-[1326px] absolute">
+<div className="w-[1025px] h-[106px] left-[158px] top-[118px] absolute text-center text-[#192a51] text-2xl font-normal font-garamond">Venture into a cosmic blend of knowledge and excitement at our Astronomy Club events. <br/>From captivating stargazing nights to informative workshops and celestial competitions, <br/>join us for stellar experiences eriences<br/></div>
+<div className="w-[354px] h-[371px] left-0 top-[261px] absolute bg-[#a6a7ab]/40 rounded-[30px]" />
+<div className="w-[354px] h-[371px] left-[946px] top-[261px] absolute bg-[#a6a7ab]/40 rounded-[30px]" />
+<div className="w-[354px] h-[371px] left-[473px] top-[261px] absolute bg-[#a6a7ab]/40 rounded-[30px]" />
+</div>
+<div className="w-[1078px] h-[450px] left-[82px] top-[2076px] absolute">
+<div className="w-[261px] h-11 p-2.5 left-[368px] top-[354px] absolute bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] rounded-[20px] shadow-[0px_6px_8.699999809265137px_0px_rgba(159,134,192,0.45)] justify-center items-center gap-2.5 inline-flex">
+<div className="text-white text-[22px] font-semibold font-['Syne'] leading-9">Explore</div>
+</div>
+<div className="w-[695px] h-[124px] left-[373px] top-[180px] absolute text-[#192a51] text-2xl font-normal font-garamond">Join us for upcoming events whether you're a seasoned astronomy enthusiast or just curious about the wonders of the universe, we invite you to be a part of our celestial community. Stay tuned for updates, and let's explore the cosmos together!"</div>
+<div className="w-[705px] h-[115px] left-[373px] top-[38px] absolute text-[#192a51] text-[42px] font-normal font-felix">Explore Our Current and Future Events!</div>
+<div className="w-[329px] h-[450px] left-0 top-0 absolute bg-[#a6a7ab]/40 rounded-[30px]" />
+</div>
 </div>
   );
 }

@@ -20,7 +20,7 @@ function Hero() {
         <div className="w-[565px] h-[174px] left-[341px] top-[212px] absolute text-center text-[#192a51] text-[74px] font-normal font-felix">Astronomy<br/>club</div>
         <div className="left-[38px] top-[494.43px] absolute text-[#192a51] text-base font-normal font-['Castoro Titling']">rset</div>
         <div className="left-[1123.84px] top-[494px] absolute text-center text-[#192a51] text-xl font-normal font-['Castoro Titling']">2024</div>
-        <div className="left-[484px] top-[414px] absolute text-center text-[#192a51] text-base font-normal font-['Castoro Titling']">Rajagiri school of <br/>engineering and technology</div>
+        <div className="left-[484px] top-[414px] absolute text-center text-[#192a51] text-base font-normal font-castoro">Rajagiri school of <br/>engineering and technology</div>
         <div className="w-[563px] h-[0px] left-[342px] top-[398px] absolute border border-[#b8a4c9]"></div>
         <img className="w-[78px] h-[57px] left-[44px] top-[32px] absolute" src={img1} />
     </div>
