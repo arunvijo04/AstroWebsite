@@ -1,34 +1,26 @@
 import React from "react";
+import img5 from "../assets/img5.png";
+import img6 from "../assets/img6.png";
+import img7 from "../assets/img7.png";
 
-function Gallery() {
+const Gallery = () => {
   return (
-    <div className="w-[1209px] h-[640px] px-6 pt-[42px] pb-[71px] bg-gradient-to-r from-[#c9def4] via-[#f5ccd4] to-[#d5c6e0] rounded-[25px] flex-col justify-start items-center gap-[54px] inline-flex overflow-hidden">
-    <div className="text-center text-[#192a51] text-[55px] font-normal font-['Felix Titling'] leading-[42px]">Club gallery</div>
-    <div className="w-[1117px] h-[403px] bg-white justify-start items-start gap-6 inline-flex">
-        <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-            <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
-            <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
-                <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">chenda melam</div>
-                <div className="self-stretch"></div>
-            </div>
-        </div>
-        <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-            <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
-            <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
-                <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">pookalam</div>
-                <div className="self-stretch"></div>
-            </div>
-        </div>
-        <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-            <img className="self-stretch h-[330px]" src="https://via.placeholder.com/356x330" />
-            <div className="self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
-                <div className="self-stretch text-[#2d2d2d] text-xl font-semibold font-['Epilogue'] leading-[30px]">kathakali</div>
-                <div className="self-stretch"></div>
-            </div>
-        </div>
-    </div>
-</div>
+    <section className="bg-gradient-to-r from-[#c9def4] via-[#f5ccd4] to-[#d5c6e0] py-10 rounded-2xl mx-4 md:mx-10 lg:mx-20">
+      <h2 className="text-center text-[#192a51] text-4xl md:text-5xl font-felix mb-8">Club Gallery</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        {[
+          { src: img5, label: "Chenda Melam" },
+          { src: img6, label: "Pookalam" },
+          { src: img7, label: "Kathakali" },
+        ].map((item, index) => (
+          <div key={index} className="bg-white rounded-xl shadow-lg p-4">
+            <img src={item.src} alt={item.label} className="w-full h-52 object-cover rounded-lg" />
+            <h3 className="mt-4 text-[#2d2d2d] text-xl font-semibold text-center">{item.label}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
   );
-}
+};
 
 export default Gallery;

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero";
+import img1 from "./assets/img1.png"
 import img2 from "./assets/img2.png"
 import img3 from "./assets/img3.png"
 import img4 from "./assets/img4.png"
@@ -11,7 +11,27 @@ import img7 from "./assets/img7.png"
 function App() {
   return (
     <div className="w-[1252px] h-[4246px] relative bg-[#eae4e9]  overflow-hidden">
-    <Hero />
+   <div className="w-[1211px] h-[554px] left-[19px] top-[43px] absolute bg-gradient-to-br from-[#c9def4] via-[#f5ccd4] to-[#b8a4c9] rounded-[20.38px]  overflow-hidden">
+           <div className="w-[1110.17px] h-[66.84px] p-[8.15px] left-[38.31px] top-[27.71px] absolute bg-[#5e548e] rounded-[40.76px] border-2 border-white backdrop-blur-[12.23px] justify-center items-center gap-[8.15px] inline-flex overflow-hidden">
+               <div className="h-[25px] px-[220px] justify-end items-center gap-[58px] flex">
+                   <div className="text-white text-[20.94px] font-normal font-syne">Home</div>
+                   <div className="text-white text-[20.94px] font-normal font-syne">About</div>
+                   <div className="text-white text-[20.94px] font-normal font-syne">Events</div>
+                   <div className="text-white text-[20.94px] font-normal font-syne">Gallery</div>
+               </div>
+               <div className="h-11 p-2.5 bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] rounded-[20px] shadow-[0px_7px_9px_0px_rgba(25,42,81,0.48)] justify-center items-center gap-2.5 flex">
+                   <div className="text-white text-[15px] font-semibold font-syne leading-normal">Contact</div>
+               </div>
+           </div>
+           <div className="w-[608px] h-[286px] left-[320px] top-[184px] absolute rounded-[50.54px] shadow-[0px_0px_32.60416793823242px_1.6302082538604736px_rgba(96,108,56,0.30)] border-2 border-[#192a51]" />
+           <div className="w-[386.25px] h-[386.25px] left-[1190.96px] top-[518.75px] absolute origin-top-left rotate-[172.15deg]" />
+           <div className="w-[565px] h-[174px] left-[341px] top-[212px] absolute text-center text-[#192a51] text-[74px] font-normal font-felix">Astronomy<br/>club</div>
+           <div className="left-[38px] top-[494.43px] absolute text-[#192a51] text-base font-normal font-['Castoro Titling']">rset</div>
+           <div className="left-[1123.84px] top-[494px] absolute text-center text-[#192a51] text-xl font-normal font-['Castoro Titling']">2024</div>
+           <div className="left-[484px] top-[414px] absolute text-center text-[#192a51] text-base font-normal font-castoro">Rajagiri school of <br/>engineering and technology</div>
+           <div className="w-[563px] h-[0px] left-[342px] top-[398px] absolute border border-[#b8a4c9]"></div>
+           <img className="w-[78px] h-[57px] left-[44px] top-[32px] absolute" src={img1} />
+       </div>
     <div className="w-[565px] h-[174px] left-[342px] top-[770px] absolute text-center text-[#192a51] text-[55px] font-normal font-felix">aBOUT us</div>
     <div className="w-[565px] h-[174px] left-[343px] top-[1353px] absolute text-center text-[#192a51] text-[55px] font-normal font-felix">eVENTS</div>
     <div className="w-[1209px] h-[640px] px-6 pt-[42px] pb-[71px] left-[22px] top-[2619px] absolute bg-gradient-to-r from-[#c9def4] via-[#f5ccd4] to-[#d5c6e0] rounded-[25px] flex-col justify-start items-center gap-[54px] inline-flex overflow-hidden">
