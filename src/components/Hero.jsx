@@ -1,28 +1,55 @@
 import React from "react";
-import img1 from "../assets/img1.png"
+import img1 from "../assets/img1.png";
 
 function Hero() {
   return (
-    <div className="w-[1211px] h-[554px] left-[19px] top-[43px] absolute bg-gradient-to-br from-[#c9def4] via-[#f5ccd4] to-[#b8a4c9] rounded-[20.38px]  overflow-hidden">
-        <div className="w-[1110.17px] h-[66.84px] p-[8.15px] left-[38.31px] top-[27.71px] absolute bg-[#5e548e] rounded-[40.76px] border-2 border-white backdrop-blur-[12.23px] justify-center items-center gap-[8.15px] inline-flex overflow-hidden">
-            <div className="h-[25px] px-[220px] justify-end items-center gap-[58px] flex">
-                <div className="text-white text-[20.94px] font-normal font-syne">Home</div>
-                <div className="text-white text-[20.94px] font-normal font-syne">About</div>
-                <div className="text-white text-[20.94px] font-normal font-syne">Events</div>
-                <div className="text-white text-[20.94px] font-normal font-syne">Gallery</div>
+    <div className="h-screen bg-gradient-to-br from-[#c9def4] via-[#f5ccd4] to-[#b8a4c9] flex flex-col items-center justify-center relative overflow-hidden">
+      {/* Navbar */}
+      <div className="w-[1200px] h-[66.84px] absolute top-[27.71px] bg-[#5e548e] rounded-full border-2 border-white shadow-lg backdrop-blur-md flex justify-between items-center px-8">
+        <div className="flex gap-8 items-center">
+          <img
+            src={img1}
+            alt="Logo"
+            className="w-14 h-14 cursor-pointer"
+          />
+          <div className="flex gap-8">
+            <div className="text-white text-lg font-syne cursor-pointer hover:underline">
+              Home
             </div>
-            <div className="h-11 p-2.5 bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] rounded-[20px] shadow-[0px_7px_9px_0px_rgba(25,42,81,0.48)] justify-center items-center gap-2.5 flex">
-                <div className="text-white text-[15px] font-semibold font-syne leading-normal">Contact</div>
+            <div className="text-white text-lg font-syne cursor-pointer hover:underline">
+              About
             </div>
+            <div className="text-white text-lg font-syne cursor-pointer hover:underline">
+              Events
+            </div>
+            <div className="text-white text-lg font-syne cursor-pointer hover:underline">
+              Gallery
+            </div>
+          </div>
         </div>
-        <div className="w-[608px] h-[286px] left-[320px] top-[184px] absolute rounded-[50.54px] shadow-[0px_0px_32.60416793823242px_1.6302082538604736px_rgba(96,108,56,0.30)] border-2 border-[#192a51]" />
-        <div className="w-[386.25px] h-[386.25px] left-[1190.96px] top-[518.75px] absolute origin-top-left rotate-[172.15deg]" />
-        <div className="w-[565px] h-[174px] left-[341px] top-[212px] absolute text-center text-[#192a51] text-[74px] font-normal font-felix">Astronomy<br/>club</div>
-        <div className="left-[38px] top-[494.43px] absolute text-[#192a51] text-base font-normal font-['Castoro Titling']">rset</div>
-        <div className="left-[1123.84px] top-[494px] absolute text-center text-[#192a51] text-xl font-normal font-['Castoro Titling']">2024</div>
-        <div className="left-[484px] top-[414px] absolute text-center text-[#192a51] text-base font-normal font-castoro">Rajagiri school of <br/>engineering and technology</div>
-        <div className="w-[563px] h-[0px] left-[342px] top-[398px] absolute border border-[#b8a4c9]"></div>
-        <img className="w-[78px] h-[57px] left-[44px] top-[32px] absolute" src={img1} />
+        <button className="bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] px-6 py-2 rounded-full text-white text-sm font-semibold font-syne shadow-md hover:scale-105 transition-transform">
+          Contact
+        </button>
+      </div>
+
+      {/* Hero Section */}
+      <div className="w-[608px] h-[286px] absolute top-[184px] rounded-[50px] shadow-xl border-2 border-[#192a51] bg-white flex flex-col justify-center items-center">
+        <h1 className="text-[74px] font-felix text-[#192a51] text-center leading-tight">
+          Astronomy<br />Club
+        </h1>
+        <div className="w-[563px] h-[1px] bg-[#b8a4c9] my-4" />
+        <p className="text-lg font-castoro text-[#192a51] text-center">
+          Rajagiri School of <br /> Engineering and Technology
+        </p>
+      </div>
+
+      {/* Bottom Text */}
+      <div className="absolute bottom-[40px] left-[40px] text-[#192a51] font-castoro">
+        RSET
+      </div>
+      <div className="absolute bottom-[40px] right-[40px] text-[#192a51] font-castoro text-xl">
+        2024
+      </div>
     </div>
   );
 }
