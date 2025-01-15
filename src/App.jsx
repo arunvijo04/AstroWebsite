@@ -25,7 +25,9 @@ function App() {
       <div className="mt-10">
         <Gallery />
       </div>
-      <Banner />
+      <div className="mt-10">
+        <Banner />
+      </div>
       <div className="mt-10">
         <Contact />
       </div>

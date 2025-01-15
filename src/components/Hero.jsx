@@ -27,23 +27,23 @@ function Hero() {
 
         {/* Links for Desktop */}
         <div className="hidden md:flex gap-4 md:gap-8">
-          <a href="#home" className="text-white text-sm md:text-lg font-syne cursor-pointer hover:underline">
+          <a href="#home" className="text-white text-sm md:text-xl font-syne cursor-pointer hover:underline">
             Home
           </a>
-          <a href="#about" className="text-white text-sm md:text-lg font-syne cursor-pointer hover:underline">
+          <a href="#about" className="text-white text-sm md:text-xl font-syne cursor-pointer hover:underline">
             About
           </a>
-          <a href="#events" className="text-white text-sm md:text-lg font-syne cursor-pointer hover:underline">
+          <a href="#events" className="text-white text-sm md:text-xl font-syne cursor-pointer hover:underline">
             Events
           </a>
-          <a href="#gallery" className="text-white text-sm md:text-lg font-syne cursor-pointer hover:underline">
+          <a href="#gallery" className="text-white text-sm md:text-xl font-syne cursor-pointer hover:underline">
             Gallery
           </a>
           <a
             href="https://nova-bigbaam.web.app/index.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-sm md:text-lg font-syne cursor-pointer hover:underline"
+            className="text-white text-sm md:text-xl font-syne cursor-pointer hover:underline"
           >
             NOVA
           </a>
@@ -57,7 +57,7 @@ function Hero() {
 
       {/* Dropdown Menu for Mobile */}
       {isDropdownOpen && (
-        <div className="absolute top-20 w-[90%] max-w-[1200px] bg-[#5e548e] rounded-lg border-2 border-white shadow-lg flex flex-col items-start px-4 py-4">
+        <div className="absolute top-24 w-[90%] max-w-[1200px] bg-[#5e548e] rounded-lg border-2 border-white shadow-lg flex flex-col items-start px-4 py-4 z-10">
           <a href="#home" className="text-white text-sm font-syne cursor-pointer hover:underline mb-2">
             Home
           </a>
@@ -86,11 +86,11 @@ function Hero() {
 
       {/* Hero Section */}
       <div className="w-[90%] max-w-[608px] h-auto p-6 md:p-10 md:h-[286px] rounded-[30px] md:rounded-[50px] shadow-xl border-2 border-[#192a51] bg-white flex flex-col justify-center items-center absolute top-1/2 transform -translate-y-1/2 md:top-[184px] md:transform-none">
-        <h1 className="text-3xl md:text-[74px] font-felix text-[#192a51] text-center leading-tight">
+        <h1 className="text-3xl md:text-[80px] font-felix text-[#192a51] text-center leading-tight">
           Astronomy<br />Club
         </h1>
         <div className="w-full h-[1px] bg-[#b8a4c9] my-4" />
-        <p className="text-sm md:text-lg font-castoro text-[#192a51] text-center">
+        <p className="text-sm md:text-2xl font-castoro text-[#192a51] text-center">
           Rajagiri School of <br /> Engineering and Technology
         </p>
       </div>

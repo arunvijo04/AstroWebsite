@@ -2,9 +2,9 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-full max-w-[1300px] h-auto px-4 pt-12 pb-8 bg-[#eae4e9] flex flex-col justify-center items-center gap-6 md:h-[632px] md:px-[15px] md:pt-[100px] md:pb-[66px]">
-      {/* Title */}
-      <div className="text-center text-[#192a51] text-3xl font-normal font-castoro leading-[40px] md:text-5xl md:leading-[56px]">
+    <div  className="w-full max-w-[1500px] h-auto relative mx-auto px-4 py-8">
+
+<div className="text-center text-[#192a51] text-3xl font-normal font-castoro leading-[40px] md:text-4xl md:leading-[50px]">
         JOIN THE COSMIC JOURNEY!
       </div>
 

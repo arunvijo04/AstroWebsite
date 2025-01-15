@@ -23,7 +23,7 @@ const Gallery = () => {
             />
             <div className="text-center">
               <div className="text-[#2d2d2d] text-lg md:text-xl font-semibold font-epilogue leading-tight">
-                {index === 0 ? "Chenda Melam" : index === 1 ? "Pookalam" : "Kathakali"}
+                {index === 0 ? "" : index === 1 ? "" : ""}
               </div>
             </div>
           </div>
