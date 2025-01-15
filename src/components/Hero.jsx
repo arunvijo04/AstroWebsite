@@ -85,7 +85,7 @@ function Hero() {
       )}
 
       {/* Hero Section */}
-      <div className="w-[90%] max-w-[608px] h-auto p-6 md:p-10 md:h-[286px] absolute top-32 md:top-[184px] rounded-[30px] md:rounded-[50px] shadow-xl border-2 border-[#192a51] bg-white flex flex-col justify-center items-center">
+      <div className="w-[90%] max-w-[608px] h-auto p-6 md:p-10 md:h-[286px] rounded-[30px] md:rounded-[50px] shadow-xl border-2 border-[#192a51] bg-white flex flex-col justify-center items-center absolute top-1/2 transform -translate-y-1/2 md:top-[184px] md:transform-none">
         <h1 className="text-3xl md:text-[74px] font-felix text-[#192a51] text-center leading-tight">
           Astronomy<br />Club
         </h1>
