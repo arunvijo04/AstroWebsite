@@ -13,7 +13,7 @@ function Hero() {
           <img
             src={img1}
             alt="Logo"
-            className="w-10 h-10 md:w-14 md:h-14 cursor-pointer"
+            className="w-18 h-10 md:w-18 md:h-14 cursor-pointer"
           />
         </div>
 
@@ -50,9 +50,14 @@ function Hero() {
         </div>
 
         {/* Contact Button */}
-        <button className="hidden md:block bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] px-6 py-2 rounded-full text-white text-sm font-semibold font-syne shadow-md hover:scale-105 transition-transform">
-          Contact
-        </button>
+        {/* Contact Button */}
+<button
+  onClick={() => window.location.href = "mailto:astronomy@rajagiritech.edu.in"}
+  className="hidden md:block bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] px-6 py-2 rounded-full text-white text-sm font-semibold font-syne shadow-md hover:scale-105 transition-transform"
+>
+  Contact
+</button>
+
       </div>
 
       {/* Dropdown Menu for Mobile */}
@@ -78,7 +83,9 @@ function Hero() {
           >
             Nova
           </a>
-          <button className="bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] px-4 py-2 rounded-full text-white text-sm font-semibold font-syne shadow-md hover:scale-105 transition-transform mt-2">
+          <button 
+          onClick={() => window.location.href = "mailto:astronomy@rajagiritech.edu.in"}
+          className="bg-gradient-to-r from-[#d5c6e0] to-[#9f86c0] px-4 py-2 rounded-full text-white text-sm font-semibold font-syne shadow-md hover:scale-105 transition-transform mt-2">
             Contact
           </button>
         </div>
@@ -88,7 +95,7 @@ function Hero() {
       <div className="w-[90%] max-w-[608px] h-auto p-6 md:p-10 md:h-[286px] rounded-[30px] md:rounded-[50px] shadow-xl border-2 border-[#192a51] bg-white flex flex-col justify-center items-center absolute top-1/2 transform -translate-y-1/2 md:top-[184px] md:transform-none">
         <h1 className="text-3xl md:text-[80px] font-felix text-[#192a51] text-center leading-tight">
           Astronomy<br />Club
-        </h1>
+        </h1> 
         <div className="w-full h-[1px] bg-[#b8a4c9] my-4" />
         <p className="text-sm md:text-2xl font-castoro text-[#192a51] text-center">
           Rajagiri School of <br /> Engineering and Technology
